@@ -50,3 +50,41 @@ footer, header, hgroup, menu, nav, section {
 		border-collapse: collapse;
 		border-spacing: 0;
 	}
+
+  /* HEADER **************************/
+  h1{
+    text-align: center;
+    font-size: 50px;
+  }
+
+	.navbar{
+	display: flex;
+	}
+
+	.navbar li{
+	margin:10px;	
+	}
+
+	.onglet_equipe{
+		left:0
+	}
+
+	.onglet_projet{
+
+	}
+
+	.onglet_inscription{
+
+	}
+
+	.onglet_contact{
+
+	}
+
+	.sous_onglet_projet{
+		display:none;
+	}
+
+	.sous_onglet_inscription{
+		display: none;
+	}
