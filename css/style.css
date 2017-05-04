@@ -10,7 +10,8 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video
+{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -21,70 +22,557 @@ time, mark, audio, video {
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-		display: block;
+footer, header, hgroup, menu, nav, section
+{
+	display: block;
+}
+
+html
+{
+	overflow-x: hidden;
+}
+
+body
+{
+	line-height: 1;
+}
+
+ol, ul
+{
+	list-style: none;
+}
+blockquote, q
+{
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after
+{
+	content: '';
+	content: none;
+}
+
+table
+{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*-------------@font-face---------------*/
+@font-face
+{
+	font-family: housemovements-custom;
+	src: url("../font/housemovements-custom.otf");
+}
+
+/* HEADER **************************/
+h1
+{
+	text-align: center;
+	font-size: 70px;
+	font-family: housemovements-custom;
+	padding: 60px;
+	color: white;
+	text-shadow: 5px 5px black;
+	background-image: url("../img/banniere_foret.jpg");
+}
+a
+{
+	text-decoration: none;
+	color:black
+}
+p
+{
+	width:80%;
+	margin:10px 30px 10px 17%;
+}
+
+#img_menu
+{
+	height: 40%;
+	width: 100%;
+	margin: 10px auto 0 auto;
+	border-radius: 15%;
+
+}
+
+.navbar
+{
+	display: block;
+	border: 2px solid black;
+	padding: 0;
+	margin: 10px 0 0 5px;
+	width: 15%;
+	height: 450px;
+	position: fixed;
+	border-radius: 20px;
+	font-size: 25px;
+}
+
+.navbar li
+{
+margin:10px;
+}
+
+.onglet_equipe
+{
+	left:0
+}
+
+.onglet_projet
+{
+
+}
+
+.onglet_inscription
+{
+
+}
+
+.onglet_contact
+{
+
+}
+
+.sous_onglet_equipe
+{
+	display: none;
+}
+
+.sous_onglet_projet
+{
+	display:none;
+}
+
+.sous_onglet_inscription
+{
+	display: none;
+}
+
+/* FOOTER *****************************************/
+.footer
+{
+	margin: auto;
+	display: block;
+}
+.lien_img
+{
+	text-decoration: none;
+}
+.imgdown
+{
+	padding:0px 5px;
+	margin-left: 16px;
+}
+
+.pdown
+{
+	float: right;
+		text-align: left;
+	font-family: Bond4F-UltraLight;
+	font-weight: lighter;
+	font-size:20px;
+	margin-top: 10px;
+	margin-right: 222px;
+}
+
+footer
+{
+	background-color: #353535;
+	color:white;
+	text-align: center;
+	padding:8px;
+	text-decoration: none;
+	width: 100%;
+}
+
+footer a
+{
+	color:white;
+}
+
+@media screen and (max-width:736px)
+{
+	body
+	{
+		margin:0;
+	}
+	/*HEADER ********************/
+	#poleemploi
+	{
+		height:100px;
+		margin:0;
+		float:left;
 	}
 
-	html {
-		overflow-x: hidden;
+	#popschool
+	{
+		height: 100px;
+		margin:0;
+		float: right;
 	}
-
-	body {
-		line-height: 1;
+	#up
+	{
+		text-align: right;
+		margin:0;
+		clear:both;
 	}
-
-	ol, ul {
-		list-style: none;
+	.text1
+	{
+		font-size: 30px;
+		padding:0;
+		padding-top: 20px;
+		margin-bottom: 20px;
 	}
-	blockquote, q {
-		quotes: none;
+	.maj, .bleu1
+	{
+		font-size: 35px;
 	}
-
-	blockquote:before, blockquote:after,
-	q:before, q:after {
-		content: '';
-		content: none;
+	.text2
+	{
+		font-size:30px;
+		padding:0;
+		text-align: left;
+		margin-bottom: 10px;
 	}
-
-	table {
-		border-collapse: collapse;
-		border-spacing: 0;
+	/* MILIEU **************************/
+	/*BAN BLEU */
+	.bannblue
+	{
+		padding:7px;
 	}
-
-  /* HEADER **************************/
-  h1{
-    text-align: center;
-    font-size: 50px;
-  }
-
-	.navbar{
-	display: flex;
+	.intbann
+	{
+		font-size: 20px;
+		margin:0;
 	}
-
-	.navbar li{
-	margin:10px;	
+	/*DEMI BORDUR VERT*/
+	.text, .linkinscri
+	{
+		width:100%;
+		padding:5px;
 	}
-
-	.onglet_equipe{
-		left:0
+	.textblue, .linkblue1
+	{
+		padding:0;
+		width:100%;
 	}
-
-	.onglet_projet{
-
+	.inscription
+	{
+		width:95%;
+		height:60%;
+		font-size:30px;
+		text-align: right;
+		margin-right: 5px;
+		margin-bottom: 15px;
 	}
-
-	.onglet_inscription{
-
+	/*TXT ENTRE BORDUR VERT ET BLEU*/
+	.img1, .img2
+	{
+		margin:0;
+		padding:0;
 	}
-
-	.onglet_contact{
-
+	.img2
+	{
+		margin-top:10px;
 	}
-
-	.sous_onglet_projet{
-		display:none;
+	.gauche
+	{
+		margin:0;
 	}
-
-	.sous_onglet_inscription{
-		display: none;
+	.link
+	{
+		width:80%;
+		text-align:right;
+		font-size: 30px;
 	}
+	.linkgreen
+	{
+		word-wrap: break-word;
+	}
+	.candid
+	{
+		word-break: break-all;
+	}
+	/*BORDUR BLEU*/
+	.address
+	{
+		margin:auto;
+		padding:5px;
+		width:80%;
+		font-size: 25px;
+	}
+	.contact
+	{
+		padding:0;
+		padding-top: 20px;
+		margin:0;
+	}
+/* FOOTER ************************/
+	footer
+	{
+		height: 50px;
+		bottom: 0;
+		font-size: 13px;
+		width: 100%;
+	}
+	.footer
+	{
+		margin-bottom: 130px;
+	}
+	.footer a
+	{
+		margin-bottom: 50px;
+	}
+	.pdown
+	{
+		width: 85%;
+		margin: 0;
+		display: flex;
+		font-size: 17px;
+		text-align: left;
+		margin-top: 7px;
+	}
+}
+/* MEDIAQUERIES FOOTER *********************/
+@media screen and (min-width:737px) and (max-width:1024px)
+{
+	/* début top*/
+	body
+	{
+		margin: 0;
+		padding: 0;
+	}
+	.allimg*
+	{
+		margin: 0;
+		padding: 0
+	}
+	#poleemploi
+	{
+		margin: 0;
+		height: 240px;
+	}
+	#popschool
+	{
+		margin: 0;
+		height: 240px;
+	}
+	.text1
+	{
+		padding-right: 0;
+		font-size: 70px;
+	}
+	.text2
+	{
+		padding-right: 0;
+		font-size: 50px
+	}
+	.maj
+	{
+		font-size: 90px
+	}
+	.bleu1
+	{
+		font-size: 90px
+	}
+	/* fin top*/
+
+	/* bannière bleue*/
+	.intbann
+	{
+		padding: 5px;
+		font-size: 25px
+	}
+	/* fin bannière bleue*/
+
+	/*partie gauche*/
+	.gauche
+	{
+		margin-left: 50px;
+	}
+	.link
+	{
+		margin:5px;
+		padding: 15px;
+	}
+	.phraselink1
+	{
+		font-size: 20px;
+	}
+	.phraselink2
+	{
+		font-size: 20px;
+	}
+	.address p
+	{
+		font-size: 25px;
+	}
+	.img1
+	{
+		margin: 0;
+		padding-top: 15px;
+		height: 30px;
+	}
+	.img2
+	{
+		margin: 0;
+		padding-top: 15px;
+		height: 30px;
+	}
+	/*fin partie gauche*/
+
+	/* début partie droite*/
+	.inscription
+	{
+		height: 385px
+	}
+	.textblue
+	{
+		padding-top: 50px;
+		font-size: 30px;
+	}
+	.linkblue1
+	{
+		font-size: 30px;
+	}
+	/*fin partie droite*/
+
+	/*début footer*/
+	.imgdown
+	{
+			 padding: 0;
+			 margin: 0;
+			 height: 50px
+	}
+	.footer
+	{
+		width: 685px;
+	}
+	.pdown
+	{
+		margin:0;
+		padding:0;
+		font-size: 13px;
+	}
+}
+
+/* achraf*/
+@media screen and (min-width: 1025px) and (max-width: 1919px)
+{
+	body
+	{
+		margin: 0;
+		padding: 0;
+	}
+	.allimg
+	{
+		margin: 0;
+		padding: 0
+	}
+	#poleemploi
+	{
+		margin: 0;
+		height: 300px;
+	}
+	#popschool
+	{
+		margin: 0;
+		height: 300px;
+	}
+	.text1
+	{
+		padding-right: 0;
+		font-size: 90px;
+	}
+	.text2
+	{
+		padding-right: 0;
+		font-size: 50px
+	}
+	.maj
+	{
+		font-size: 90px
+	}
+	.bleu1
+	{
+		font-size: 90px
+	}
+/* fin top*/
+
+/* bannière bleue*/
+	.intbann{
+		padding: 5px;
+		font-size: 50px
+	}
+/* fin bannière bleue*/
+
+/*partie gauche*/
+	.gauche
+	{
+		margin-left: 50px;
+	}
+	.link
+	{
+		margin:5px;
+		padding: 15px;
+	}
+	.phraselink1
+	{
+		font-size: 25px;
+	}
+	.phraselink2
+	{
+		font-size: 25px;
+	}
+	.address p
+	{
+		font-size: 30px;
+	}
+	.img1
+	{
+		margin: 0;
+		padding-top: 15px;
+		height: 30px;
+	}
+	.img2
+	{
+		margin: 0;
+		padding-top: 15px;
+		height: 30px;
+	}
+/*fin partie gauche*/
+
+/* début partie droite*/
+	.inscription
+	{
+		height: 385px
+	}
+	.textblue
+	{
+		padding-top: 50px;
+		font-size: 40px;
+	}
+	.linkblue1
+	{
+		font-size: 40px;
+	}
+/*fin partie droite*/
+
+/*début footer*/
+	.imgdown
+	{
+		height: 60px
+	}
+	.footer
+	{
+		width: 900px;
+	}
+	.pdown
+	{
+		margin:0;
+		padding:0;
+		font-size: 13px;
+	}
+}
