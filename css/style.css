@@ -61,6 +61,10 @@ footer, header, hgroup, menu, nav, section {
     text-align: center;
     font-size: 50px;
 		font-family: housemovements-custom;
+		padding: 50px;
+		color: white;
+		text-shadow: 5px 5px black;
+		background-image: url("../img/banniere_foret.jpg");
   }
 	a{
 		text-decoration: none;
@@ -68,13 +72,14 @@ footer, header, hgroup, menu, nav, section {
 	}
 	p{
 		width:80%;
-		margin:0 auto;
+		margin:10px 30px 10px 17%;
 	}
 
 	#img_menu{
-		height: 38%;
+		height: 40%;
 		width: 100%;
-		margin: 0 auto;
+		margin: 10px auto 0 auto;
+		border-radius: 15%;
 
 	}
 
@@ -82,10 +87,12 @@ footer, header, hgroup, menu, nav, section {
 		display: block;
 		border: 2px solid black;
 		padding: 0;
-		margin: 0 0 0 2px;
-		width: 9%;
-		height: 340px;
+		margin: 10px 0 0 5px;
+		width: 15%;
+		height: 450px;
 		position: fixed;
+		border-radius: 20px;
+		font-size: 25px;
 	}
 
 	.navbar li{
