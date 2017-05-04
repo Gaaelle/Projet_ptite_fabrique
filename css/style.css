@@ -50,19 +50,46 @@ footer, header, hgroup, menu, nav, section {
 		border-collapse: collapse;
 		border-spacing: 0;
 	}
+	/*-------------@font-face---------------*/
+	@font-face {
+		font-family: housemovements-custom;
+		src: url("../font/housemovements-custom.otf");
+	}
 
   /* HEADER **************************/
   h1{
     text-align: center;
     font-size: 50px;
+		font-family: housemovements-custom;
   }
+	a{
+		text-decoration: none;
+		color:black
+	}
+	p{
+		width:80%;
+		margin:0 auto;
+	}
+
+	#img_menu{
+		height: 38%;
+		width: 100%;
+		margin: 0 auto;
+
+	}
 
 	.navbar{
-	display: flex;
+		display: block;
+		border: 2px solid black;
+		padding: 0;
+		margin: 0 0 0 2px;
+		width: 9%;
+		height: 340px;
+		position: fixed;
 	}
 
 	.navbar li{
-	margin:10px;	
+	margin:10px;
 	}
 
 	.onglet_equipe{
@@ -79,6 +106,10 @@ footer, header, hgroup, menu, nav, section {
 
 	.onglet_contact{
 
+	}
+
+	.sous_onglet_equipe{
+		display: none;
 	}
 
 	.sous_onglet_projet{
