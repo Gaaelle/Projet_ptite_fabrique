@@ -61,10 +61,12 @@ footer, header, hgroup, menu, nav, section {
     text-align: center;
     font-size: 70px;
 		font-family: housemovements-custom;
-		padding: 60px;
+		padding: 150px;
 		color: white;
 		text-shadow: 5px 5px black;
-		background-image: url("../img/banniere_foret.jpg");
+		background-image: url("../img/banniere_accueill.jpg");
+		background-size: 100%;
+		background-repeat: no-repeat;
   }
 	a{
 		text-decoration: none;
@@ -80,19 +82,24 @@ footer, header, hgroup, menu, nav, section {
 		width: 100%;
 		margin: 10px auto 0 auto;
 		border-radius: 15%;
+		index: 2;
 
 	}
 
 	.navbar{
 		display: block;
+		font-family: housemovements-custom;
 		border: 2px solid black;
 		padding: 0;
 		margin: 10px 0 0 5px;
 		width: 15%;
-		height: 450px;
+		height: 500px;
 		position: fixed;
 		border-radius: 20px;
 		font-size: 25px;
+		top: 0;
+		background-color: white;
+		index: 0;
 	}
 
 	.navbar li{
